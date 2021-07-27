@@ -14,7 +14,7 @@ Scheduler::setDefaultFactory(function() use($loop){
 });
 
 Observable::interval(1000)
-    ->take(5)
+    ->take(6)
     ->flatMap(function ($i) {
         return Observable::of($i + 1);
     })
